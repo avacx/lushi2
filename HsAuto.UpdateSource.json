@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "enabled": true,
+  "manifestUrls": [
+    "https://gitee.com/maoge55/hsauto-release/releases/download/stable/update-manifest.json"
+  ]
+}

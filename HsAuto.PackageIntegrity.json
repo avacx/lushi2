@@ -1,0 +1,437 @@
+{
+  "schema": 1,
+  "signatureKeyId": "hsauto-update-2026-01",
+  "files": [
+    {
+      "path": "Bai/Web/app.js",
+      "sha256": "73138E8142C0B87BB625066FB514FFC9478AD4BD185B0DB63A91A12D1077C14A",
+      "size": 53355
+    },
+    {
+      "path": "Bai/Web/assets/heisha-wordmark.png",
+      "sha256": "D3F2BAD02F06538C7AABA641A89FEC3C168787A2A307CDCBCCB943CD45760C5A",
+      "size": 683538
+    },
+    {
+      "path": "Bai/Web/assets/icon-standard.ico",
+      "sha256": "638D919EB60A35E6B5242E768998F671BABA1999DE5A391A763FD7944D52D462",
+      "size": 32694
+    },
+    {
+      "path": "Bai/Web/assets/icon-standard.png",
+      "sha256": "40FAF54C78AFB37732415AA51E236F7714D615DA4C694BD2FC9BEECAC113A61A",
+      "size": 23886
+    },
+    {
+      "path": "Bai/Web/assets/icon.ico",
+      "sha256": "8D8134E7305C54484423724E7EB52995065B6321B3A5F453C66152BEA32DF3D8",
+      "size": 32536
+    },
+    {
+      "path": "Bai/Web/assets/icon.png",
+      "sha256": "D2C80661D1CBCDECAC11D28927AA67D2BECCA3F9EF2E54B24160CE31A8A88655",
+      "size": 22184
+    },
+    {
+      "path": "Bai/Web/bai.css",
+      "sha256": "40D72E484C47EF7A8FF4E080B428E9C9B8DD9FF358296468BC788BD47375CB96",
+      "size": 42272
+    },
+    {
+      "path": "Bai/Web/bridge.js",
+      "sha256": "741653DE5CA21C19E9E01BE4E5B9B3CE59D6EA86351CD12245B222F614DBBFEC",
+      "size": 970
+    },
+    {
+      "path": "Bai/Web/design.css",
+      "sha256": "9354B76B4B317380BEDAD47536235A5EF5871F4555DB9E463674C9649A881A3E",
+      "size": 33513
+    },
+    {
+      "path": "Bai/Web/index.html",
+      "sha256": "E7D893DB9710AF6EC3B6405C4F534AB2A9C59653A90C1357C613BDDC25C85392",
+      "size": 23678
+    },
+    {
+      "path": "Bai/Web/login.html",
+      "sha256": "01485E59E8C76EC90B6B66033F1C3846429D236C7E33B4E71437FDCC4848020F",
+      "size": 3919
+    },
+    {
+      "path": "Bai/Web/login.js",
+      "sha256": "2990D92A538E2F159B7C34B8E9A6B5E6A2C22BE53D385FF1E3609C6A1295E8ED",
+      "size": 1274
+    },
+    {
+      "path": "BepInEx.Runtime/.doorstop_version",
+      "sha256": "75A2F501000D4FE28F74BC7EE66DAE5581959D28B6C44F0C1B0C05CD5BA261E6",
+      "size": 5
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/core/0Harmony.dll",
+      "sha256": "1A21CC03424FC82C3DD1346905D16494536B9595AE4162228D99FB7C285C1031",
+      "size": 204800
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/core/0Harmony20.dll",
+      "sha256": "C755A5AB2712915A32F9A850D580A8C1B70FF1653BC76600F2767AA8FFCCC663",
+      "size": 112640
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/core/BepInEx.Harmony.dll",
+      "sha256": "00C8F2AC48593E4D45CE4EB26CE4E68B18113C5C489B38B8BF0850F65830D601",
+      "size": 6656
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/core/BepInEx.Preloader.dll",
+      "sha256": "55D3895351A9D16B63B6F35F1C01B44AC650979E853D0BD3A442B92A082AF64F",
+      "size": 43008
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/core/BepInEx.dll",
+      "sha256": "8255B28902886085C578B9E427D3073C97002DB85176D2090CDEDA90EF14CE70",
+      "size": 128512
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/core/HarmonyXInterop.dll",
+      "sha256": "7CE1342D3AFA0334B59A3E38C0AED15E162B9ABE9D46F95F34BE44AF47F3B493",
+      "size": 23552
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/core/Mono.Cecil.Mdb.dll",
+      "sha256": "5896D1898F616701FFF18F3B2C71E6B844D2390EF9F41E1C5FCCCE8CB27C698E",
+      "size": 43008
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/core/Mono.Cecil.Pdb.dll",
+      "sha256": "174DB44A067F58561510AF746F3CAEB032037762C57A31C8D9EE32DB25174984",
+      "size": 86528
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/core/Mono.Cecil.Rocks.dll",
+      "sha256": "54AC539FB5DDC8B44C0E9ACD0FCB7324F89D1A072EDF8EBC1B06DD691E3D3927",
+      "size": 27648
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/core/Mono.Cecil.dll",
+      "sha256": "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6",
+      "size": 339456
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/core/MonoMod.RuntimeDetour.dll",
+      "sha256": "40E49BB314391CD7BDDC2644F8553EEBA92C194B940836B103DF16955C464E0C",
+      "size": 105984
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/core/MonoMod.Utils.dll",
+      "sha256": "9D1495F147AC93C4F81F84538C1A326E8F8A6AEFC78D6289D798F3CE1162C5E9",
+      "size": 187904
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/Microsoft.CSharp.dll",
+      "sha256": "5BC0CA58BD36DA55FBDC23DEE4322BB64FCCB8A1A05542C58943E17719F29B89",
+      "size": 301568
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/Mono.Posix.dll",
+      "sha256": "BA79A457EEF12BFAE70E170F4FDDBED3182B56F98845D160F0A9EB1D16F4542D",
+      "size": 214528
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/Mono.Security.dll",
+      "sha256": "10C15AEC059287EFAF001577AFBD93A16D72E11EE469940DEE4BD0058EDBC84A",
+      "size": 241152
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.ComponentModel.Composition.dll",
+      "sha256": "2535FD6FAC676852936CB435D917B2D69CC6FCDD391F7B3009898153BA04919F",
+      "size": 257024
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.Configuration.dll",
+      "sha256": "DACEE8200D08E3839CBEC868DB2F339165BFC134251CC2C5D54E0B9862D072DA",
+      "size": 124928
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.Core.dll",
+      "sha256": "F1F02497739F187351F8581B8D7487BEF00225532D664A9364162BD28833FC0E",
+      "size": 1113088
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.Data.DataSetExtensions.dll",
+      "sha256": "1C88D17E686CAF77551A18D3672A1589143E6B8AE83BFCF7C306478CDB64AB90",
+      "size": 29696
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.Data.dll",
+      "sha256": "C2D0E7E37D38277A54A1AEC324340E079FB801F3E78D9F917AA73907335AA9FE",
+      "size": 2125312
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.Drawing.dll",
+      "sha256": "435CC673A1ABA5AF488D8AF379D96F7E351A4B5ED2A1772892287A8268567DEB",
+      "size": 489984
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.EnterpriseServices.dll",
+      "sha256": "03F240D259B9CF27DBC5C9E8F42B8746A50CC5C52395D8E2DE5730321F9DE3B8",
+      "size": 44544
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.IO.Compression.FileSystem.dll",
+      "sha256": "02F749FBE31E54CD8B86A35738E1DDDAE00CCC2E9FDB8990B93F1A494E6E753A",
+      "size": 18432
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.IO.Compression.dll",
+      "sha256": "15E84F38FB5E6BB926FE92A79374A083B8DFBABFA11F8CD1D409F21B98447CFD",
+      "size": 114688
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.Net.Http.dll",
+      "sha256": "622A9CF93EF5A5C080106ABA2CFA1845BE1385116582A2931C17447980795BDA",
+      "size": 122880
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.Numerics.dll",
+      "sha256": "445835166650CBB13F31100336D3F97F12F28809F7DF21C03378F50BD278CAF3",
+      "size": 119296
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.Runtime.Serialization.dll",
+      "sha256": "165701537FC0224777C707306875202207E949BEA533C84554C2DEA5C348C303",
+      "size": 934400
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.Security.dll",
+      "sha256": "99D21E442E7E5F42F06D66544ED0EE4BA32B61FDF11734678BCFA80722EB641E",
+      "size": 320000
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.ServiceModel.Internals.dll",
+      "sha256": "5F926225818163439D823F9EF0F6E798E16604D8B75B66F22A133B40615F1B05",
+      "size": 215040
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.Transactions.dll",
+      "sha256": "8983073E9627B1086102A9871A23E2BA53A0BB9FCC76826CAB9F5DEC9107E21A",
+      "size": 35328
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.Xml.Linq.dll",
+      "sha256": "F3DFBC94B7031ADE45DC5CB9F325B647BA72C87EB6F9A15F7D5A5BD3667CE407",
+      "size": 136704
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.Xml.dll",
+      "sha256": "BE0403B0F3744A317259A1A0E35DB7627E059D71E40B895BCCDF5D59AA957ED8",
+      "size": 3160064
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/System.dll",
+      "sha256": "6E545E4A20B813F8BECC9E9BB0A88C3E78F8CE6BD44BF233990841C5EFE28232",
+      "size": 2637824
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/mscorlib.dll",
+      "sha256": "E4671FCDA9A9BC284C6B92ED73B9F0312ADDC97FB5740794B822EF6E36DB1E43",
+      "size": 4631552
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/corelib_override_full/netstandard.dll",
+      "sha256": "6AE62E082DC494A2433984177F60CA4DB5FAE69B1F360A8B33754172B310B8C5",
+      "size": 90112
+    },
+    {
+      "path": "BepInEx.Runtime/BepInEx/native/hsloader.dll",
+      "sha256": "91DC4B573D770136412BFDD9C372A1DD9475D94B999920D11047C2BA963305A5",
+      "size": 105984
+    },
+    {
+      "path": "BepInEx.Runtime/doorstop_config.ini",
+      "sha256": "6388078EC9215ABAD78193C140ECE3127EAB671D5DA106EA917059AE50D3D07E",
+      "size": 1490
+    },
+    {
+      "path": "BepInEx.Runtime/winhttp.dll",
+      "sha256": "8C6CDBC38836DEE87E3368F5DE1994D7C0CCEBF29E4CE7ABA3C0981F9375412C",
+      "size": 26112
+    },
+    {
+      "path": "Data/hdt-by-id.json",
+      "sha256": "1B683C7BE65F47C84D277044C3BD664EEEEEAF623E888F21B92274A025EC826D",
+      "size": 10603361
+    },
+    {
+      "path": "HsAuto.PackageInfo.json",
+      "sha256": "FC43388B0E8EAA1DBEC8A635AA761C5596D80BD0391AF57C916B82D9B6E279D6",
+      "size": 119
+    },
+    {
+      "path": "HsAuto.UpdateSource.json",
+      "sha256": "79CC95067B765CE28650C48C38970307AB225135316D869B16793AC6DEEA3A5C",
+      "size": 162
+    },
+    {
+      "path": "HsAuto.Updater.exe",
+      "sha256": "E5881EAB3D218B2DCEE12373482EEA895D89E9070DABE8B7A1EC20C9C8605F10",
+      "size": 71706514
+    },
+    {
+      "path": "HsAuto.Updater.runtimeconfig.json",
+      "sha256": "7E12CC5E51456D3F3F887ACD150BFE3D75A9E98818E0EB090CDF69556D03F3F8",
+      "size": 439
+    },
+    {
+      "path": "HsAuto.Watchdog.exe",
+      "sha256": "F303754844B756E48A287C3C8EE3A9DED84FEAD28330AF53FDD42F62D6D08F8C",
+      "size": 66643234
+    },
+    {
+      "path": "HsAuto.Watchdog.runtimeconfig.json",
+      "sha256": "B127B4C772EA55EDB7D0DF74E97488B3F29DC5BEF931A1FC3009607BC8899A62",
+      "size": 429
+    },
+    {
+      "path": "HsAuto.exe",
+      "sha256": "AC9FA418106174B21192D9AF3EDB47DF9238C35E01DD9FC2E8E1BCFA2B3ADE44",
+      "size": 104596402
+    },
+    {
+      "path": "HsAuto_脚本客户端图文教程.html",
+      "sha256": "7DCBF356853CA5ABABCAC72A17C38991EE5EBC4E4576F574235E4A6BE67EC8F1",
+      "size": 22987
+    },
+    {
+      "path": "hsdk.dll",
+      "sha256": "034CC3F1DD286696DC3A4039EAC13B6A58AB38D69A44E817730D21E454772625",
+      "size": 1293312
+    },
+    {
+      "path": "hswebcompat.dll",
+      "sha256": "DBECE6B7E26E4D79A32BFB2E2CAE12C1841B0A509EDF3E3E57F74D6BC9FA9A89",
+      "size": 722944
+    },
+    {
+      "path": "tutorial-assets/049-console.png",
+      "sha256": "A5846D3AC7429531A2C8A2B09DB2C64E86C4F031226FC5F145B9D7104C19A59F",
+      "size": 99645
+    },
+    {
+      "path": "tutorial-assets/049-details.png",
+      "sha256": "85E03B7ACA5A04987ECF1F3D3482D5FBCBEBA76B6A4F884D2E9382F04EC6C804",
+      "size": 225496
+    },
+    {
+      "path": "tutorial-assets/049-license.png",
+      "sha256": "765568D8C1E5DF3CEE38F439503348A21D7D9EF286328667B9EEF89A9335B5DA",
+      "size": 16523
+    },
+    {
+      "path": "tutorial-assets/049-login-cn.png",
+      "sha256": "2763082BE29CE7EA1AFD179F243C8E08FE76B79781DF391F70EA7A9646A8FD0E",
+      "size": 72024
+    },
+    {
+      "path": "tutorial-assets/049-login-global.png",
+      "sha256": "EB8A222EF745879125BE617F67F941501FAD131AD93C9381708EAB01E9553CB5",
+      "size": 33608
+    },
+    {
+      "path": "tutorial-assets/049-login-ready.png",
+      "sha256": "E54F9408AB6A5F36D71F830763EEBBB8B3DA8536A778D7A8620F60AADEA4B2C0",
+      "size": 26302
+    },
+    {
+      "path": "tutorial-assets/049-settings.png",
+      "sha256": "6307C028FBAA5AA670CF86BBC32B4D70FD45363B2AC93C5D6F99B2A74603E187",
+      "size": 88258
+    },
+    {
+      "path": "tutorial-assets/049-stats.png",
+      "sha256": "34E401AD87555E3195EDE27F35C62B78B7D210778D667F7E3BD4D5AAD510EAC3",
+      "size": 199768
+    },
+    {
+      "path": "tutorial-assets/057-details.png",
+      "sha256": "27651F689FD0AA209A77BBB3CC1200ACF32406490302E19DAB9A43F16041C1A4",
+      "size": 231149
+    },
+    {
+      "path": "tutorial-assets/057-settings.png",
+      "sha256": "E8A77C74386BFCCE769569DFB8BCF8BD5898D8C2C271E172F81870D41A943E6C",
+      "size": 103808
+    },
+    {
+      "path": "tutorial-assets/057-stats.png",
+      "sha256": "43C303742EE49FEE853B6590031B138C2BA2A1BD961FB9A92F948E6812D247A3",
+      "size": 199573
+    },
+    {
+      "path": "tutorial-assets/heisha-wordmark.png",
+      "sha256": "D3F2BAD02F06538C7AABA641A89FEC3C168787A2A307CDCBCCB943CD45760C5A",
+      "size": 683538
+    },
+    {
+      "path": "tutorial-assets/tutorial-assets/049-console.png",
+      "sha256": "A5846D3AC7429531A2C8A2B09DB2C64E86C4F031226FC5F145B9D7104C19A59F",
+      "size": 99645
+    },
+    {
+      "path": "tutorial-assets/tutorial-assets/049-details.png",
+      "sha256": "85E03B7ACA5A04987ECF1F3D3482D5FBCBEBA76B6A4F884D2E9382F04EC6C804",
+      "size": 225496
+    },
+    {
+      "path": "tutorial-assets/tutorial-assets/049-license.png",
+      "sha256": "765568D8C1E5DF3CEE38F439503348A21D7D9EF286328667B9EEF89A9335B5DA",
+      "size": 16523
+    },
+    {
+      "path": "tutorial-assets/tutorial-assets/049-login-cn.png",
+      "sha256": "2763082BE29CE7EA1AFD179F243C8E08FE76B79781DF391F70EA7A9646A8FD0E",
+      "size": 72024
+    },
+    {
+      "path": "tutorial-assets/tutorial-assets/049-login-global.png",
+      "sha256": "EB8A222EF745879125BE617F67F941501FAD131AD93C9381708EAB01E9553CB5",
+      "size": 33608
+    },
+    {
+      "path": "tutorial-assets/tutorial-assets/049-login-ready.png",
+      "sha256": "E54F9408AB6A5F36D71F830763EEBBB8B3DA8536A778D7A8620F60AADEA4B2C0",
+      "size": 26302
+    },
+    {
+      "path": "tutorial-assets/tutorial-assets/049-settings.png",
+      "sha256": "6307C028FBAA5AA670CF86BBC32B4D70FD45363B2AC93C5D6F99B2A74603E187",
+      "size": 88258
+    },
+    {
+      "path": "tutorial-assets/tutorial-assets/049-stats.png",
+      "sha256": "34E401AD87555E3195EDE27F35C62B78B7D210778D667F7E3BD4D5AAD510EAC3",
+      "size": 199768
+    },
+    {
+      "path": "tutorial-assets/tutorial-assets/057-details.png",
+      "sha256": "27651F689FD0AA209A77BBB3CC1200ACF32406490302E19DAB9A43F16041C1A4",
+      "size": 231149
+    },
+    {
+      "path": "tutorial-assets/tutorial-assets/057-settings.png",
+      "sha256": "E8A77C74386BFCCE769569DFB8BCF8BD5898D8C2C271E172F81870D41A943E6C",
+      "size": 103808
+    },
+    {
+      "path": "tutorial-assets/tutorial-assets/057-stats.png",
+      "sha256": "43C303742EE49FEE853B6590031B138C2BA2A1BD961FB9A92F948E6812D247A3",
+      "size": 199573
+    },
+    {
+      "path": "tutorial-assets/tutorial-assets/heisha-wordmark.png",
+      "sha256": "D3F2BAD02F06538C7AABA641A89FEC3C168787A2A307CDCBCCB943CD45760C5A",
+      "size": 683538
+    }
+  ],
+  "signature": "qWRlUXaB3y7xxN8OOJ8o2aB/oiyMnCrSnt6f+0NaYdyveyaBxvSmXIGbZZfPl6VCWGmHJCnfDoZ7MhfyuZ/1RIkZIQTrv02hKldlzZdpWajwbpvjyBcFk+xSUMS5G5Gg1qlWygYTzHCkMGQhFr4MDTlgtWsxpTYjooGZecXmadEdx/3Q7YDBZ8VDM0uKF0rDJVFC4kdrJDJ0egumuB8dPqO2aX+rYlKnNI5H+ZV4306zH0UgQ1Ucpxz6Y0SzNIM+HQ9tNwn0gAup8eaU4FzZaKDsl1ej42yd1QVYlbnlzT3WOVNwL6IaGqPFRIm6WR8opYh0t6+RSneyR42D8LFcdeTG9f9xFvV98JpIFgSG8DMIc0GV3nuspUNO3UEb8CFYbeOSxZFna+p/3zXsdaNmiIlD0mv1N1NGBRcP/OC28AEedYh6C09XSBuTyQdfF2GTnSdzdrpTLlS2DfPJLRRTWJK8PJBrjwAudGCKGu8wVD7AImmvSXGtkNIBzbRghDQt"
+}

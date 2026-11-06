@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" /><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>炉石黑纱 · HSD AI</title>
+<link rel="stylesheet" href="design.css"><link rel="stylesheet" href="bai.css">
+</head>
+<body class="on-console tier-standard"><div id="loading">正在载入炉石黑纱…</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.34 6.34"/><path d="M20 5v6h-6"/></symbol>
+  <symbol id="i-log" viewBox="0 0 24 24"><path d="M4 5h16M4 10h16M4 15h10"/><circle cx="17" cy="17.5" r="3.5"/><path d="m16 16 2.2 1.5L16 19z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M6 12h12"/></symbol>
+  <symbol id="i-square" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-caret-d" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-caret-l" viewBox="0 0 24 24"><path d="M14 6l-5 6 5 6" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-caret-r" viewBox="0 0 24 24"><path d="m10 6 5 6-5 6" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M21 20H3"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 8h10M18 8h2M4 16h4M12 16h8"/><circle cx="16" cy="8" r="2"/><circle cx="10" cy="16" r="2"/></symbol>
+  <symbol id="i-console" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M12 15h5"/></symbol>
+  <symbol id="i-crown" viewBox="0 0 24 24"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-1.5 11h-15L3 8z"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="14" r="4"/><path d="m11 11 8-8M16 4l3 3M13.5 6.5l3 3"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="currentColor" stroke="none"/><path d="M12 10.8V16" stroke="#fff" stroke-width="2"/><circle cx="12" cy="7.6" r="1.3" fill="#fff" stroke="none"/></symbol>
+  <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3 2.5 20h19L12 3z"/><path d="M12 10v4.5"/><circle cx="12" cy="17.2" r=".4" fill="currentColor"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></symbol>
+  <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v9M9.5 9.5h3.8a1.8 1.8 0 0 1 0 3.6H9.5h4.3a1.8 1.8 0 0 1 0 3.6H9.5" stroke-width="1.4"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M7 5H4.5a3 3 0 0 0 3 4M17 5h2.5a3 3 0 0 1-3 4M12 14v3M8.5 20h7M10 17h4"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.8 6.3.8-4.6 4.4 1.2 6.2L12 17.2 6.4 20.2l1.2-6.2L3 9.6l6.3-.8L12 3z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 5 3 8.5 7 10 4-1.5 7-5 7-10V6l-7-3z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 5 13h5l-1 9 8-11h-5l1-9z"/></symbol>
+  <symbol id="i-robot" viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="11" rx="3"/><circle cx="9.5" cy="13" r="1.2" fill="currentColor" stroke="none"/><circle cx="14.5" cy="13" r="1.2" fill="currentColor" stroke="none"/><path d="M12 8V4M8 4h8"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5-12-7.5z"/></symbol>
+  <symbol id="i-power" viewBox="0 0 24 24"><path d="M12 3v8"/><path d="M17.5 6.5a8 8 0 1 1-11 0"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="1.5"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 11l5 4 5-4"/><path d="M4 19h16"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V8M7 12l5-5 5 5"/><path d="M4 4h16"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6.5 7l1 13h9l1-13"/><path d="M10 11v5M14 11v5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 5.6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-5.6-4-9s1.5-6.4 4-9z"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.5 6.5a4.5 4.5 0 0 0-6 6L3 18l3 3 5.5-5.5a4.5 4.5 0 0 0 6-6L14 13l-3-3 3.5-3.5z"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6a1 1 0 0 1 1-1h5l2 2.5h9a1 1 0 0 1 1 1V18a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6z"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-split" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 4v16"/></symbol>
+  <symbol id="i-token" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="3"/><path d="M7 12h.01M11 12h.01M15 12h.01" stroke-width="2.4"/></symbol>
+  <symbol id="i-task" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="m8 12.5 2.5 2.5L16 9.5"/></symbol>
+</svg>
+
+<div id="app">
+  <!-- ============ Header ============ -->
+  <header class="app-header">
+    <div class="brand" aria-label="炉石黑纱 · HSD AI" title="炉石黑纱 · HSD AI">
+      <div class="brand-wordmark"><img src="assets/heisha-wordmark.png" alt="炉石黑纱 · HSD AI" width="2172" height="724" draggable="false"></div>
+    </div>
+    <div class="mid">
+      <div class="el-segmented" id="mainTabs">
+        <div class="el-segmented__item" data-tab="details">账号详情</div>
+        <div class="el-segmented__item" data-tab="stats">战绩统计</div>
+        <div class="el-segmented__item" data-tab="settings">运行设置</div>
+        <div class="el-segmented__item is-active" data-tab="console">账号控制台</div>
+        <div class="el-segmented__item" data-tab="vip">卡密信息</div>
+        <div class="el-segmented__item" data-tab="version">版本查看<span class="upd-dot"></span></div>
+        <button type="button" class="el-segmented__item guide-link" data-action="tutorial" title="在默认浏览器中打开图文教程">使用教程<svg class="icon"><use href="#i-book"/></svg></button>
+      </div>
+    </div>
+    <div class="quick-bar"><button type="button" class="el-button ui-switch" id="switchLegacyUi">切换旧版 UI</button></div>
+  </header>
+
+  <div class="window-controls">
+    <button class="wc-btn" title="最小化"><svg class="icon"><use href="#i-minus"/></svg></button>
+    <button class="wc-btn" title="最大化"><svg class="icon"><use href="#i-square"/></svg></button>
+    <button class="wc-btn close" title="关闭"><svg class="icon"><use href="#i-x"/></svg></button>
+  </div>
+
+  <main class="page" id="page-details">
+    <aside class="detail-sidebar" aria-label="账号列表">
+      <div class="detail-sidebar-head"><b>游戏账号</b><span id="detailAccountCount"></span></div>
+      <input id="detailSearch" type="search" placeholder="搜索账号 / 昵称" aria-label="搜索账号或昵称" autocomplete="off">
+      <div id="detailAccountList" class="detail-account-list" aria-label="选择详情账号"></div>
+      <p class="detail-sidebar-foot">选择账号，查看成长与进度</p>
+    </aside>
+    <section id="detailContent" class="detail-content" aria-label="当前账号详情" tabindex="0"></section>
+  </main>
+
+  <!-- ============ 战绩统计 ============ -->
+  <main class="page" id="page-stats">
+    <aside class="detail-sidebar stats-sidebar" aria-label="战绩账号列表">
+      <div class="detail-sidebar-head"><b>游戏账号</b><span id="statsAccountCount"></span></div>
+      <input id="statsSearch" type="search" placeholder="搜索账号 / 昵称" aria-label="搜索战绩账号" autocomplete="off">
+      <div id="statsAccountList" class="detail-account-list" aria-label="选择战绩账号"></div>
+      <p class="detail-sidebar-foot">点击账号，自动加载该账号战绩</p>
+    </aside>
+    <section id="statsContent" class="detail-content stats-content" aria-label="当前账号战绩" tabindex="0">
+      <header id="statsHero" class="account-hero"></header>
+      <div class="stats-controls">
+        <div class="toolbar stats-filter"><label for="historyFrom">统计日期</label><div class="date-range"><input type="date" id="historyFrom" aria-label="开始日期"><span>→</span><input type="date" id="historyTo" aria-label="结束日期"></div><span id="historyRangeHint" class="stat-chip" role="status"></span></div>
+        <div class="toolbar stats-modes"><div id="historyModes" class="el-button-group"></div><label id="historyArenaLabel" hidden>竞技场类型 <select id="historyArena" class="native-select" aria-label="竞技场类型"></select></label></div>
+      </div>
+      <div id="historySummary" class="stat-grid history-summary"></div>
+      <div id="historyTables" class="stats-cols"></div>
+      <footer class="stats-footer"><span>战绩按账号独立保存</span><div><button class="el-button el-button--danger is-plain" data-action="clearHistory">清空当前</button><button class="el-button" data-action="clearAllHistory">清空所有数据</button></div></footer>
+    </section>
+  </main>
+
+  <!-- ============ Page 3: 运行设置 ============ -->
+  <main class="page" id="page-settings">
+    <aside class="detail-sidebar" aria-label="运行设置账号">
+      <div class="detail-sidebar-head"><b>游戏账号</b><span id="settingsAccountCount"></span></div>
+      <input class="account-search" id="settingsSearch" placeholder="搜索账号 / 昵称" aria-label="搜索设置账号">
+      <button id="settingsAll" type="button" class="detail-choice scope-all" data-select-settings=""><span class="choice-icon"><svg class="icon"><use href="#i-user"/></svg></span><span class="choice-copy"><b>全部</b><small>全账号默认设置</small></span></button>
+      <div id="settingsAccount" class="detail-account-list" aria-label="选择设置账号"></div>
+    </aside>
+    <div class="settings-main">
+      <div class="settings-scope"><b id="settingsScopeTitle">全部账号设置</b><button class="el-button el-button--primary" data-action="save">保存设置</button></div>
+      <div class="page-body" id="prefBody"><div class="el-collapse" id="prefCollapse"></div></div>
+      <div class="pill-nav"><div class="el-segmented" id="prefNav"></div></div>
+    </div>
+  </main>
+
+  <!-- ============ 账号控制台 ============ -->
+  <main class="page active" id="page-console">
+    <div class="page-body">
+      <div class="batch-actions" id="batchActions">
+        <div class="inner">
+          <button class="el-button el-button--primary"><svg class="icon"><use href="#i-play"/></svg>启动勾选账号</button>
+          <button class="el-button el-button--danger is-plain"><svg class="icon"><use href="#i-power"/></svg>停止勾选账号</button>
+          <span class="hint">已选择 <b id="selCount" style="color:var(--el-color-primary)">0</b> 个账号</span>
+        </div>
+      </div>
+
+      <div class="table-card grow">
+        <table class="el-table">
+<thead>
+            <tr>
+              <th class="col-check"><span class="el-checkbox" id="checkAll"></span></th>
+              <th>序号</th><th>账号</th><th>自动</th><th>启停时间</th><th>脚本</th><th>炉石</th>
+              <th>脚本模式</th><th>策略</th><th>卡组选择</th>
+              <th>状态</th><th>备注</th><th>登录</th><th>区域</th><th>网页</th>
+            </tr>
+          </thead>
+<tbody id="accountRows"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="toolbar console-actions">
+      <button class="el-button el-button--primary" data-action="startSelected"><svg class="icon"><use href="#i-play"/></svg>启动勾选账号</button>
+      <button class="el-button" data-action="add"><svg class="icon"><use href="#i-plus"/></svg>添加游戏账号</button>
+      <button class="el-button el-button--danger is-plain" data-action="delete"><svg class="icon"><use href="#i-trash"/></svg>删除账号</button>
+      <button class="el-button tool-repair" data-action="repair"><svg class="icon"><use href="#i-wrench"/></svg>一键修复脚本</button>
+      <button class="el-button tool-arrange" data-action="arrange"><svg class="icon"><use href="#i-split"/></svg>最小化排列窗口</button>
+      <button class="el-button tool-import" data-action="import" title="导入 token 或完整账号备份"><svg class="icon"><use href="#i-up"/></svg>导入 token</button>
+      <button class="el-button tool-tokens" data-action="tokens"><svg class="icon"><use href="#i-token"/></svg>查看 token</button>
+      <div class="tools-wrap">
+        <button class="el-button" id="toolsBtn"><svg class="icon"><use href="#i-wrench"/></svg>更多工具<svg class="icon filled" style="font-size:12px"><use href="#i-caret-d"/></svg></button>
+        <div class="tools-menu" id="toolsMenu"></div>
+      </div>
+      <div class="spacer"></div>
+      <div class="tools-wrap">
+        <button class="el-button" id="optsBtn"><svg class="icon"><use href="#i-sliders"/></svg>运行选项<svg class="icon filled" style="font-size:12px"><use href="#i-caret-d"/></svg></button>
+        <div class="tools-menu opts-menu" id="optsMenu">
+          <div class="mi"><svg class="icon"><use href="#i-play"/></svg>启动 Battle.net</div>
+          <div class="opt-sep"></div>
+          <div class="opt-row"><span class="opt-lbl">最大并发</span><span class="stepper"><button>−</button><input value="2" /><button>＋</button></span></div>
+          <div class="opt-sep"></div>
+          <div class="opt-row"><span class="opt-lbl">启动后缩小炉石窗口</span><span class="el-switch on"></span></div>
+          <div class="opt-row"><span class="opt-lbl">脚本自动更新</span><span class="el-switch on"></span></div>
+          <div class="opt-row"><span class="opt-lbl">一键启动战网</span><span class="el-switch on"></span></div>
+          <div class="opt-row"><span class="opt-lbl">自动领取通行证</span><span class="el-switch on"></span></div>
+          <div class="opt-row"><span class="opt-lbl">自动做任务</span><span class="el-switch on"></span></div>
+          <div class="opt-row"><span class="opt-lbl">自动领取成就与活动奖励</span><span class="el-switch on"></span></div>
+          <div class="opt-row"><span class="opt-lbl">开机自动启动</span><span class="el-switch"></span></div>
+        </div>
+      </div>
+      <button class="el-button" data-action="refresh"><svg class="icon"><use href="#i-refresh"/></svg>刷新列表</button>
+    </div>
+  </main>
+
+  <!-- ============ Page 4: 卡密信息 ============ -->
+  <main class="page" id="page-vip">
+    <div class="toolbar" style="margin-top:4px;margin-bottom:6px">
+      <span class="lbl" style="font-weight:600;color:var(--el-text-color-primary);font-size:15px">卡密信息</span>
+      <span class="el-tag" id="vip-tier-tag">标准会员</span>
+      <span class="el-tag el-tag--info">同时在线 1 / 1</span>
+      <div class="spacer"></div>
+      <span class="lbl" style="color:var(--el-color-primary);font-weight:600">卡密有效 · 剩余 22 天</span>
+    </div>
+    <div class="page-body">
+      <div class="table-card" style="flex:none">
+        <table class="el-table">
+          <tbody>
+            <tr>
+              <td style="width:230px"><div class="cell">
+                <svg class="icon" style="color:var(--el-color-primary);font-size:15px"><use href="#i-key"/></svg>
+                <span style="font-family:Consolas,'Courier New',monospace">HSAU-9F27-XXXX-88A1</span>
+                <button class="el-button is-text" style="height:22px;font-size:13px" data-tip="复制卡密"><svg class="icon"><use href="#i-copy"/></svg></button>
+              </div></td>
+              <td><span class="el-tag el-tag--success">有效</span></td>
+              <td>到期 <b>2026-11-19</b></td>
+              <td>剩余 <b style="color:var(--el-color-primary)">22 天</b></td>
+              <td>最后校验 <b>23:10:02</b></td>
+            </tr>
+            <tr>
+              <td colspan="5"><div class="cell" style="gap:8px">
+                <button class="el-button" style="height:26px"><svg class="icon"><use href="#i-refresh"/></svg>刷新卡密状态</button>
+                <button class="el-button" style="height:26px"><svg class="icon"><use href="#i-key"/></svg>更换卡密</button>
+                <button class="el-button el-button--primary is-plain" style="height:26px"><svg class="icon"><use href="#i-plus"/></svg>续费卡密</button>
+                <button class="el-button el-button--danger is-plain" style="height:26px"><svg class="icon"><use href="#i-power"/></svg>退出登录</button>
+                <div class="spacer"></div>
+                <button class="el-button el-button--primary" style="height:26px"><svg class="icon"><use href="#i-check"/></svg>保存</button>
+              </div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-title" style="margin:6px 0 4px"><span class="bar"></span>会员版本对比</div>
+      <div class="plan-grid">
+        <div class="plan-card plain">
+          <div class="plan-head"><span class="p-crown"><svg class="icon"><use href="#i-crown"/></svg></span><span class="p-title">标准会员</span><span class="el-tag el-tag--info">基础版</span></div>
+          <div class="plan-list">
+            <div class="plan-item"><span class="ck"></span>标准（对战）</div>
+            <div class="plan-item"><span class="ck"></span>狂野</div>
+            <div class="plan-item"><span class="ck"></span>酒馆战棋</div>
+            <div class="plan-item"><span class="ck"></span>地上竞技场</div>
+            <div class="plan-item"><span class="ck"></span>单设备双开</div>
+            <div class="plan-item"><span class="ck"></span>基础 AI 策略</div>
+          </div>
+          <div class="plan-foot">简洁易用 · 功能强大</div>
+        </div>
+        <div class="plan-card pro">
+          <div class="plan-head"><span class="p-crown"><svg class="icon"><use href="#i-crown"/></svg></span><span class="p-title">高级会员</span><span class="el-tag el-tag--primary">推荐</span></div>
+          <div class="plan-list">
+            <div class="plan-item"><span class="ck"></span>标准（对战）</div>
+            <div class="plan-item"><span class="ck"></span>狂野</div>
+            <div class="plan-item"><span class="ck"></span>酒馆战棋</div>
+            <div class="plan-item"><span class="ck"></span>地上竞技场</div>
+            <div class="plan-item"><span class="ck"></span>地下竞技场<span class="hot">新</span></div>
+            <div class="plan-item"><span class="ck"></span>多设备并发<span class="hot">新</span></div>
+            <div class="plan-item"><span class="ck"></span>多设备多开<span class="hot">新</span></div>
+            <div class="plan-item"><span class="ck"></span>传说排名推荐补丁<span class="hot">新</span></div>
+            <div class="plan-item"><span class="ck"></span>网页远程控制<span class="hot">新</span></div>
+            <div class="plan-item"><span class="ck"></span>基础 AI 策略</div>
+            <div class="plan-item"><span class="ck"></span>智能 AI 策略<span class="hot">新</span></div>
+          </div>
+          <div class="plan-foot">多账号管理 · 更高效率</div>
+        </div>
+      </div>
+      <div class="form-note" style="display:block;margin-top:4px">
+        <b>版本差异说明：</b>标准版就能上传说；高级版传说额度有 <b style="color:var(--el-color-primary)">5 个</b>，且带<b>进程破限</b>（突破并发限制），普通版两个号同挂也够用。功能差异与价格以<b>群公告、群文件或群主最新说明</b>为准，升级和权限核实请直接<b>私聊群主</b>。实际可用状态以服务端授权为准。
+      </div>
+
+      <div class="toolbar" style="margin-top:8px;margin-bottom:0;flex-wrap:nowrap">
+        <span class="el-switch"></span><span class="lbl" style="color:var(--el-text-color-regular)">传说补丁</span>
+        <span class="el-switch"></span><span class="lbl" style="color:var(--el-text-color-regular)">破限5个进程</span>
+        <span class="el-switch"></span><span class="lbl" style="color:var(--el-text-color-regular)">远程控制</span>
+        <div class="spacer"></div>
+        <button class="el-button el-button--primary is-plain" style="height:26px"><svg class="icon"><use href="#i-globe"/></svg>打开远程网页</button>
+      </div>
+    </div>
+  </main>
+
+<!-- ============ Page 5: 版本查看 ============ -->
+  <main class="page" id="page-version">
+    <div class="page-body">
+      <div class="version-hero">
+        <div class="logo"><img src="assets/icon.png" class="img-pro" alt=""><img src="assets/icon-standard.png" class="img-std" alt=""></div>
+        <div class="v-num">当前版本 v0.9.20</div>
+        <div class="v-desc">多账号自动登录 · 定时运行 · UnityBridge</div>
+        <div class="toolbar" style="justify-content:center;margin:6px 0 0">
+          <button class="el-button el-button--primary"><svg class="icon"><use href="#i-download"/></svg>检查更新</button>
+          <button class="el-button"><svg class="icon"><use href="#i-book"/></svg>教程文档</button>
+          <span class="el-tag el-tag--info">更新检查尚未执行</span>
+        </div>
+      </div>
+
+      <div class="changelog" id="changelog"></div>
+    </div>
+  </main>
+
+  <!-- ============ Global: 运行日志 + 状态栏 ============ -->
+  <div class="log-panel collapsed" id="logPanel">
+    <div class="log-head" id="logHead">
+      <span class="lt"><span class="dot"></span>运行日志</span>
+      <span class="el-tag el-tag--success el-tag--plain-text" style="font-size:12px">2 个账号对局中</span>
+      <span style="font-size:12px;color:var(--el-text-color-placeholder)">日志保留最近 500 行</span>
+      <svg class="icon filled arrow" style="margin-left:auto"><use href="#i-caret-d"/></svg>
+    </div>
+    <div class="log-body">
+      <div class="log-lines" id="logLines">
+      </div>
+    </div>
+  </div>
+  <div class="status-bar">
+    <span class="st"><svg class="icon" style="font-size:13px"><use href="#i-clock"/></svg>运行时间: <b>18489秒</b></span>
+    <span class="st">局面: <b>82987</b></span>
+    <span class="st">动作: <b>-</b></span>
+    <span class="spacer"></span>
+    <span class="st"><span class="el-tag el-tag--success el-tag--plain-text" style="font-size:12px">卡密有效 · 剩余 22 天</span></span>
+    <span class="ver">HSD AI</span>
+  </div>
+</div>
+
+<script src="bridge.js"></script><script src="app.js"></script>
+</body>
+</html>

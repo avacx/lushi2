@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'">
+<meta charset="UTF-8">
+<title>炉石黑纱 · 卡密验证</title>
+<style>
+  :root {
+    --primary: #0F8C79;
+    --primary-light-7: #9FD1C9;
+    --primary-light-8: #CFE8E4;
+    --primary-light-9: #E7F4F2;
+    --primary-dark-2: #0C7061;
+    --accent: #0F8C79;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; user-select: none; }
+  body { width: 100vw; height: 100vh; background: #fff; font-family: "Segoe UI", "Microsoft YaHei", sans-serif; overflow: hidden; display: flex; flex-direction: column; }
+  #app { box-shadow: inset 0 0 0 1px #dcdfe6; display: flex; flex-direction: column; flex: 1; border-radius: 2px; }
+
+  .titlebar { height: 36px; flex: none; display: flex; align-items: center; gap: 7px; padding: 0 0 0 12px; -webkit-app-region: drag; }
+  .titlebar img { width: 16px; height: 16px; border-radius: 4px; }
+  .titlebar .tt { font-size: 12.5px; font-weight: 600; color: #303133; }
+  .titlebar .close { -webkit-app-region: no-drag; margin-left: auto; width: 42px; height: 36px; border: none; background: transparent; color: #909399; font-size: 13px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .titlebar .close:hover { background: #F56C6C; color: #fff; }
+
+  .content { flex: 1; padding: 12px 28px 0; display: flex; flex-direction: column; }
+  h1 { font-size: 17px; font-weight: 600; color: #303133; margin-bottom: 11px; }
+  .lbl { font-size: 12.5px; color: #606266; margin-bottom: 5px; }
+  .key-input { width: 100%; height: 32px; background: #fff; border: 1px solid #dcdfe6; border-radius: 7px; color: #303133; font-size: 13.5px; padding: 0 11px; outline: none; user-select: text; transition: border-color .15s; }
+  .key-input:focus { border-color: var(--accent); }
+  .msg { min-height: 18px; margin-top: 10px; font-size: 12.5px; color: #909399; }
+  .msg.ok { color: var(--accent); }
+  .msg.err { color: #F56C6C; }
+  .hint { margin-top: 3px; font-size: 11.5px; color: #A8ABB2; }
+
+  .footer { flex: none; height: 56px; display: flex; align-items: center; justify-content: flex-end; gap: 10px; padding: 0 28px; }
+  .btn { height: 30px; padding: 0 20px; border-radius: 7px; font-size: 13px; cursor: pointer; border: 1px solid #dcdfe6; background: #fff; color: #606266; }
+  .btn:hover { color: var(--accent); border-color: var(--primary-light-7); background: var(--primary-light-9); }
+  .btn-verify { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .btn-verify:hover { background: var(--accent); border-color: var(--accent); color: #fff; filter: brightness(1.08); }
+  .btn-verify:disabled { opacity: .6; cursor: default; }
+.content{min-height:0;overflow:auto}.msg{line-height:1.5;overflow-wrap:anywhere}.hint{margin-top:8px}.titlebar{app-region:drag}.titlebar button{app-region:no-drag}</style>
+</head>
+<body>
+<div id="app">
+  <div class="titlebar">
+    <img id="logoImg" src="assets/icon-standard.png" alt="">
+    <span class="tt">炉石黑纱 · HSD AI</span>
+    <button class="close" id="closeBtn">✕</button>
+  </div>
+  <div class="content">
+    <h1>请输入卡密</h1>
+    <div class="lbl">卡密</div>
+    <input class="key-input" id="keyInput" placeholder="请输入卡密" spellcheck="false">
+    <div class="msg" id="msg"></div>
+    <div class="hint">验证卡密后进入炉石黑纱</div>
+  </div>
+  <div class="footer">
+    <button class="btn" id="quitBtn">退出</button>
+    <button class="btn btn-verify" id="verifyBtn">验证</button>
+  </div>
+</div>
+<script src="bridge.js"></script><script src="login.js"></script>
+</body>
+</html>
